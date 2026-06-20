@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">
+                <i class="fab fa-spotify"></i>
+            </div>
+            <div class="sidebar-menu">
+                <div class="menu-icon active"><i class="fas fa-bars"></i></div>
+            </div>
+            <div class="sidebar-playlists">
+                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=100&q=80" alt="playlist">
+                <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=100&q=80" alt="playlist">
+                <img src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=100&q=80" alt="playlist">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=100&q=80" alt="playlist">
+                <div class="liked-songs">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=100&q=80" alt="playlist">
+                <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=100&q=80" alt="playlist">
+                <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=100&q=80" alt="playlist">
+            </div>
+        </nav>
+
+        <main class="main-view">
+            <header class="top-nav">
+                <div class="nav-left">
+                    <button class="nav-btn"><i class="fas fa-home"></i></button>
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="What do you want to play?">
+                        <i class="fas fa-folder"></i>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <span class="source-code">Ammar Ahmed</span>
+                    <button class="profile-btn"><i class="fas fa-user"></i></button>
+                </div>
+            </header>
+
+            <div class="playlist-header">
+                <img src="./assets/images/Aleb.jpg" alt="Album Cover" class="main-cover" id="header-cover">
+                <div class="playlist-info">
+                    <span class="type">Playlist</span>
+                    <h1 dir="rtl" id="header-title">مسلم اغنية قلب في الدفاتر</h1>
+                    <div class="meta">
+                        <span class="creator">Kirolosmalak</span>
+                        <span class="dot">•</span>
+                        <span>12442 saves</span>
+                        <span class="dot">•</span>
+                        <span>4 songs</span>
+                        <span class="dot">•</span>
+                        <span class="duration">18 min 27 sec</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-bar">
+                <button class="play-btn-main"><i class="fas fa-play"></i></button>
+                <i class="fas fa-check-circle action-icon text-green"></i>
+                <i class="fas fa-ellipsis-h action-icon"></i>
+                <div class="view-toggle">
+                    <span>List</span>
+                    <i class="fas fa-list"></i>
+                </div>
+            </div>
+
+            <div class="tracklist-container" id="tracklist-container">
+            </div>
+        </main>
+
+        <footer class="player-bar">
+            <div class="player-left">
+                <img src="./assets/images/Aleb.jpg" alt="current-track" class="current-track-img" id="current-img">
+                <div class="current-track-info">
+                    <span class="current-track-name" id="current-name">Aleb Fel Dafater</span>
+                    <span class="current-track-artist" id="current-artist">مسلم - Muslim</span>
+                </div>
+            </div>
+            
+            <div class="player-center">
+                <div class="player-controls">
+                    <button class="control-btn"><i class="fas fa-random"></i></button>
+                    <button class="control-btn" id="prev"><i class="fas fa-step-backward"></i></button>
+                    <button class="control-btn play-pause" id="play"><i class="fas fa-play"></i></button>
+                    <button class="control-btn" id="next"><i class="fas fa-step-forward"></i></button>
+                    <button class="control-btn"><i class="fas fa-redo"></i></button>
+                </div>
+                <div class="playback-bar">
+                    <span id="current-time">0:00</span>
+                    <div class="progress-bar-bg" id="progress-container">
+                        <div class="progress-bar-fill" id="progress"></div>
+                    </div>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+
+            <div class="player-right">
+                <button class="icon-btn"><i class="fas fa-microphone"></i></button>
+                <button class="icon-btn"><i class="fas fa-list-ul"></i></button>
+                <button class="icon-btn"><i class="fas fa-desktop"></i></button>
+                <div class="volume-control">
+                    <i class="fas fa-volume-up" id="volume-icon"></i>
+                    <div class="volume-bar-bg" id="volume-bg">
+                        <div class="volume-bar-fill" id="volume-fill"></div>
+                    </div>
+                </div>
+                <button class="icon-btn" id="fullscreen-btn"><i class="fas fa-expand-arrows-alt"></i></button>
+            </div>
+        </footer>
+    </div>
+    <audio id="audio"></audio>
+    <script src="./assets/script/app.js"></script>
+</body>
+</html>

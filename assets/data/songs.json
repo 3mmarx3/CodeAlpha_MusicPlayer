@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Aleb Fel Dafater",
+        "artist": "مسلم - Muslim",
+        "album": "Aleb Fel Dafater",
+        "date": "3 years ago",
+        "duration": "5:06",
+        "cover": "../assets/images/Aleb.jpg",
+        "src": "/music/Aleb.mp3"
+    },
+    {
+        "name": "Meen Kan Sabab",
+        "artist": "مسلم - Muslim",
+        "album": "Meen Kan Sabab",
+        "date": "3 years ago",
+        "duration": "4:28",
+        "cover": "../assets/images/Meen.jpg",
+        "src": "/music/Meen.mp3"
+    },
+    {
+        "name": "Ghasb Anny",
+        "artist": "Zap Tharwat, Sary Hany, Muslim",
+        "album": "Ghasb Anny",
+        "date": "3 years ago",
+        "duration": "4:24",
+        "cover": "../assets/images/Ghasb.jpg",
+        "src": "/music/Ghasb.mp3"
+    },
+    {
+        "name": "Etnaseet",
+        "artist": "مسلم - Muslim",
+        "album": "Etnaseet",
+        "date": "2 years ago",
+        "duration": "4:15",
+        "cover": "../assets/images/Etnaseet.jpeg",
+        "src": "/music/Etnaseet.mp3"
+    },
+
+    {
+        "name": "Abl Ma Awsalek",
+        "artist": "مسلم - Muslim",
+        "album": "Abl Ma Awsalek",
+        "date": "3 years ago",
+        "duration": "3:45",
+        "cover": "../assets/images/AblMaAwsalek.jpg",
+        "src": "/music/AblMaAwsalek.mp3"
+    },
+    {
+        "name": "Saban Aleiki",
+        "artist": "مسلم - Muslim",
+        "album": "Saban Aleiki",
+        "date": "1 year ago",
+        "duration": "4:05",
+        "cover": "../assets/images/SabanAleiki.jpg",
+        "src": "/music/SabanAleiki.mp3"
+    }
+]
